@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <!-- google fonts -->
+    <!-- favicon -->
+    <!-- fontawesome -->
+    <!-- bootstrap stylesheet -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <!-- jquery-ui -->
+
+    <!-- my own stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>NZ Birds</title>
+
+  </head>
+
+
+  <body>
+    <main class="container bg-primary border  text-warning">
+
+      <!-- nav -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> <img class="img-bird" src="images/Bird_Logo.png" alt=""> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <h1 class="display-1 mt-5 text-center">NZ Birds</h1>
+
+      <div class="text-center">
+        <svg id="home"  width="6em" height="6em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+          <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+        </svg>
+
+        <svg id="contact" width="6em" height="6em" viewBox="0 0 16 16" class="bi bi-person-lines-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+
+      </div>
+
+
+
+
+      <div id="homeSection" class="">
+
+
+        <p  class="container p-5 bg-dark rounded-pill">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Iste, debitis! Tenetur perspiciatis enim consequatur
+        aspernatur neque cum at iste iusto dolore asperiores magni
+        consequuntur, nisi, nostrum dignissimos! Repellat aliquam,
+        commodi.</p>
+
+<!-- card -->
+
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Example Modal 01</h5>
+                <p class="card-text">photo of a parrot.</p>
+                <!-- <a href="#" class="btn btn-primary">See Example</a> -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal01">
+                  See Example
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Example Modal 02</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal02" data-whatever="@mdo">See Example</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Example Modal 03</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal03" data-whatever="@mdo">See Example</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Example Modal 04</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal04" data-whatever="@mdo">See Example</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- end card -->
+
+<!-- modal 01 -->
+
+<div class="modal fade" id="exampleModal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="images/pexels-caio-56733.jpg" alt="bird">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 02 -->
+
+<div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 03 -->
+
+<div class="modal fade" id="exampleModal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 04 -->
+
+<div class="modal fade" id="exampleModal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="border border-light rounded-pill mb-5">
+          <h2 class="display-4 text-light text-center">Bird 1</h2>
+
+          <div class="row container clearfix">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <p class="text-light myPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Iste, debitis! Tenetur perspiciatis enim consequatur
+              aspernatur neque cum at iste iusto dolore asperiores magni
+              consequuntur, nisi, nostrum dignissimos! Repellat aliquam,
+              commodi.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <img class="img-thumbnail border rounded-pill p-5" src="images/bird1.jpeg" alt="Birds">
+            </div>
+          </div>
+
+          <div class="container">
+            <button class="d-block border border-light rounded-pill btn btn-warning text-primary btn-xl  myBtn" type="button" name="button">View more</button>
+          </div>
+        </div>
+
+        <div class="border border-light rounded-pill mb-5">
+          <h2 class="display-4 text-light text-center">Bird 2</h2>
+
+          <div class="row container clearfix">
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <img class="img-thumbnail border rounded-pill p-5" src="images/bird1.jpeg" alt="Birds">
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <p class="text-light myPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Iste, debitis! Tenetur perspiciatis enim consequatur
+              aspernatur neque cum at iste iusto dolore asperiores magni
+              consequuntur, nisi, nostrum dignissimos! Repellat aliquam,
+              commodi.</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <button class="d-block border border-light rounded-pill btn btn-warning text-primary btn-xl  myBtn" type="button" name="button">View more</button>
+          </div>
+        </div>
+
+        <div class="border border-light rounded-pill mb-5">
+          <h2 class="display-4 text-light text-center">Bird 1</h2>
+
+          <div class="row container clearfix">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <p class="text-light myPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Iste, debitis! Tenetur perspiciatis enim consequatur
+              aspernatur neque cum at iste iusto dolore asperiores magni
+              consequuntur, nisi, nostrum dignissimos! Repellat aliquam,
+              commodi.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <img class="img-thumbnail border rounded-pill p-5" src="images/bird1.jpeg" alt="Birds">
+            </div>
+          </div>
+
+          <div class="container">
+            <button class="d-block border border-light rounded-pill btn btn-warning text-primary btn-xl  myBtn" type="button" name="button">View more</button>
+          </div>
+        </div>
+
+        <div class="border border-light rounded-pill mb-5">
+          <h2 class="display-4 text-light text-center">Bird 2</h2>
+
+          <div class="row container clearfix">
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <img class="img-thumbnail border rounded-pill p-5" src="images/bird1.jpeg" alt="Birds">
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <p class="text-light myPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Iste, debitis! Tenetur perspiciatis enim consequatur
+              aspernatur neque cum at iste iusto dolore asperiores magni
+              consequuntur, nisi, nostrum dignissimos! Repellat aliquam,
+              commodi.</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <button class="d-block border border-light rounded-pill btn btn-warning text-primary btn-xl  myBtn" type="button" name="button">View more</button>
+          </div>
+        </div>
+        <div class="border border-light rounded-pill mb-5">
+          <h2 class="display-4 text-light text-center">Bird 1</h2>
+
+          <div class="row container clearfix">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <p class="text-light myPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Iste, debitis! Tenetur perspiciatis enim consequatur
+              aspernatur neque cum at iste iusto dolore asperiores magni
+              consequuntur, nisi, nostrum dignissimos! Repellat aliquam,
+              commodi.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <img class="img-thumbnail border rounded-pill p-5" src="images/bird1.jpeg" alt="Birds">
+            </div>
+          </div>
+
+          <div class="container">
+            <button class="d-block border border-light rounded-pill btn btn-warning text-primary btn-xl  myBtn" type="button" name="button">View more</button>
+          </div>
+        </div>
+
+        <div class="border border-light rounded-pill mb-5">
+          <h2 class="display-4 text-light text-center">Bird 2</h2>
+
+          <div class="row container clearfix">
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <img class="img-thumbnail border rounded-pill p-5" src="images/bird1.jpeg" alt="Birds">
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <p class="text-light myPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Iste, debitis! Tenetur perspiciatis enim consequatur
+              aspernatur neque cum at iste iusto dolore asperiores magni
+              consequuntur, nisi, nostrum dignissimos! Repellat aliquam,
+              commodi.</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <button class="d-block border border-light rounded-pill btn btn-warning text-primary btn-xl  myBtn" type="button" name="button">View more</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact form -->
+      <div id="contactForm">
+
+
+        <h2 class="text-center">Contact us</h2>
+        <form class="font-weight-bold bg-info myContact">
+
+          <div class="form-group p-3">
+            <label for="exampleInputPassword1">Name</label>
+            <input type="password" class="form-control " id="exampleInputPassword1">
+          </div>
+
+          <div class="form-group p-3">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text  text-light">We'll never share your email with anyone else.</small>
+          </div>
+
+          <div class="form-group p-3">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-light text-primary ml-3">Submit</button>
+        </form>
+      </div>
+
+    </main>
+
+    <!-- jquery -->
+    <script src="jquery-3.5.1.js">
+
+    </script>
+    <!-- jquery-ui -->
+
+    <!-- popperjs -->
+    <script src="popper-core-master/src/popper.js">
+
+    </script>
+    <!-- bootstrap -->
+    <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js">
+
+    </script>
+    <!-- my own script -->
+    <script src="js/script.js">
+
+    </script>
+  </body>
+
+
+</html>
